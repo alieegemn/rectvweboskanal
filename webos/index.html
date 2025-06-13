@@ -14,7 +14,6 @@
       background-color: #f9f9f9;
       font-family: sans-serif;
       text-align: center;
-      transition: opacity 0.5s ease;
       position: relative;
     }
 
@@ -41,13 +40,9 @@
       font-size: 2em;
       margin-bottom: 10px;
     }
-
-    .invisible {
-      opacity: 0;
-    }
   </style>
 </head>
-<body id="mainBody">
+<body>
   <!-- Yukarıda sabit yazılı logo -->
   <img src="https://rectvwebv3.pages.dev/assets/RecTVWebOSText.png" alt="RecTV WebOS" class="logo-text">
 
@@ -57,13 +52,8 @@
 
   <script>
     setTimeout(function() {
-      // Görünmez yap
-      document.getElementById("mainBody").classList.add("invisible");
-      // Kısa süre sonra yönlendirme yap
-      setTimeout(function() {
-        window.location.href = 'https://rectvwebos.pages.dev/main';
-      }, 500); // 0.5 saniye sonra yönlendir
-    }, 10000); // 10 saniye sonra başlat
+      window.location.href = 'https://rectvwebos.pages.dev/main';
+    }, 5000); // 5 saniye sonra yönlendir
   </script>
 </body>
 </html>
